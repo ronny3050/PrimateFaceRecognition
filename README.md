@@ -37,12 +37,14 @@ git clone https://github.com/ronny3050/PrimateFaceRecognition
 ## Usage
 
 For training on primate face images:
-```python train.py --config_file config.py
+```sh
+python train.py --config_file config.py
 ```
 <!-- CONFIG EXAMPLE -->
 ## Configuration
-The `config.py` file contains all the configurations required for training. To train on your own primate dataset, simply change the d
+The `config.py` file contains all the configurations required for training. To train on your own primate dataset, simply change the `dataset_path` parameter to the root directory name. The root directory should contain subdirectories of primate individuals.
 
+The partitions are defined in `splits` directory. Sample files are provided with this repository.
 
 
 <!-- CONTRIBUTING -->
